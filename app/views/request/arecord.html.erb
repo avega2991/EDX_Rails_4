@@ -1,0 +1,16 @@
+
+<table>
+  <th>Rubric ID</th>
+  <th>Title</th>
+  <th>Products_Count</th>
+
+  <% @arecord_result.each { |r| %>
+      <tr>
+        <td><%= r.rubric_id %></td>
+        <td><%= r.title %></td>
+        <td><%= r.products_count %></td>
+      </tr>
+  <% } %>
+</table>
+<br />
+<p><%= link_to "Upload to CSV File", :action => 'to_csv', :method_type => 'active_record' %></p>
