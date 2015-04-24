@@ -5,6 +5,6 @@ EdxFourth::Application.routes.draw do
   get '/request', :to => 'request#index'
   get '/request/sql', :to => 'request#sql'
   get '/request/arecord', :to => 'request#arecord'
-  get '/request/send_csv', :to => 'request#send_csv'
+  get '/request/sql_execute', :to => 'request#sql_execute'
 
 end
